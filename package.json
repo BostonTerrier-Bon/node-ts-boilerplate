@@ -8,7 +8,7 @@
     "build": "npm-run-all clean tsc",
     "tsc": "tsc",
     "clean": "rimraf dist/*",
-    "test": "jest",
+    "test": "jest --detectOpenHandles --forceExit",
     "lint": "eslint '+(src|tests)/**/*.[tj]s'",
     "lint:fix": "eslint '+(src|tests)/**/*.[tj]s' --fix",
     "check-ts": "ts-node src/index.ts"
